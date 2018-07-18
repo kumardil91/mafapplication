@@ -21,7 +21,7 @@ class CustomerRepository {
 
 	Customer findOne(Long id) {
 		
-		final Long id2 =3L;
-		return customers.stream().filter(customer -> customer.getId().equals(id2)).findFirst().get();
+		//final Long id2 =3L;
+		return customers.stream().filter(customer -> customer.getId().equals(id)).findFirst().get();
 	}
 }
